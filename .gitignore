@@ -1,0 +1,15 @@
+.dart_tool/
+.flutter-sdk/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+output_apk/
+android/.gradle/
+android/local.properties
+android/app/google-services.json
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+*.iml
+*.log
+.env

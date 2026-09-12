@@ -73,20 +73,28 @@ cd Agropedict-AI
 flutter pub get
 ```
 
-3. Run static analysis and tests:
+3. Optional: create a local `.env` file for live AI API access:
+
+```bash
+cp .env.example .env
+```
+
+Then replace the placeholder key in `.env`. The app can still run in demo mode without committing secrets.
+
+4. Run static analysis and tests:
 
 ```bash
 flutter analyze
 flutter test
 ```
 
-4. Run the app on an Android emulator or physical device:
+5. Run the app on an Android emulator or physical device:
 
 ```bash
 flutter run
 ```
 
-5. Build the debug APK:
+6. Build the debug APK:
 
 ```bash
 cd android
@@ -94,14 +102,14 @@ cd android
 cd ..
 ```
 
-6. Copy the generated APK into the repository `apk/` folder:
+7. Copy the generated APK into the repository `apk/` folder:
 
 ```bash
 mkdir -p apk
 cp build/app/outputs/flutter-apk/app-debug.apk apk/AgroPredict-AI-debug.apk
 ```
 
-7. Automated build, APK copy, commit, and push:
+8. Automated build, APK copy, commit, and push:
 
 ```bash
 bash scripts/build_apk_and_push.sh
